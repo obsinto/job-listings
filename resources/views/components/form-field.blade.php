@@ -1,3 +1,3 @@
-<div class="sm:col-span-4 ">
+<div class="pt-3 sm:col-span-4 ">
     {{$slot}}
 </div>
