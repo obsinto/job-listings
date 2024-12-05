@@ -7,7 +7,7 @@
         @csrf
         <div class="space-y-8"> <!-- Reduced from space-y-12 -->
             <div class="border-b border-gray-900/10 pb-8"> <!-- Reduced padding bottom -->
-                <div class="grid grid-cols-2 gap-x-6 gap-y-6"> <!-- Removed mt-10 and adjusted gap -->
+                <div class="grid grid-cols-1 gap-x-6 gap-y-6"> <!-- Removed mt-10 and adjusted gap -->
                     <div class="space-y-6"> <!-- Added consistent spacing -->
 
                         <x-form-field>
@@ -40,7 +40,7 @@
 
         <div class="mt-6 flex items-center justify-end gap-x-6">
             <a href="/" class="text-sm/6 font-semibold text-gray-900">Cancel</a>
-            <x-form-button type="submit">Register</x-form-button>
+            <x-form-button type="submit">Login</x-form-button>
         </div>
     </form>
 </x-layout>
