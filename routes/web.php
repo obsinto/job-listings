@@ -21,8 +21,13 @@ Route::view('/', 'home');
 Route::resource('jobs', JobController::class);
 
 Route::view('/contact', 'contact');
+
 Route::get('/register', [RegisteredUserController::class, 'create']);
 Route::post('/register', [RegisteredUserController::class, 'store']);
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create']);
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
+
+
+
+

@@ -13,4 +13,5 @@ class AuthenticatedSessionController extends Controller
     {
         dd('hello');
     }
+
 }
