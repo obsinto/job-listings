@@ -45,19 +45,24 @@
                             <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>
 
                         @endguest
+                        @auth()
+                            <form method="POST" action="/logout">
+                                @csrf
+                                <x-form-button>Logout</x-form-button>
+                                @endauth
+                            </form>
 
 
+                            <!--
+                      Dropdown menu, show/hide based on menu state.
 
-                        <!--
-                          Dropdown menu, show/hide based on menu state.
-
-                          Entering: "transition ease-out duration-100"
-                            From: "transform opacity-0 scale-95"
-                            To: "transform opacity-100 scale-100"
-                          Leaving: "transition ease-in duration-75"
-                            From: "transform opacity-100 scale-100"
-                            To: "transform opacity-0 scale-95"
-                        -->
+                      Entering: "transition ease-out duration-100"
+                        From: "transform opacity-0 scale-95"
+                        To: "transform opacity-100 scale-100"
+                      Leaving: "transition ease-in duration-75"
+                        From: "transform opacity-100 scale-100"
+                        To: "transform opacity-0 scale-95"
+                    -->
 
                     </div>
                 </div>
@@ -96,7 +101,9 @@
                 </button>
             </div>
         </div>
+    </nav>
 </div>
+
 <nav>
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="md:hidden" id="mobile-menu">
@@ -111,6 +118,7 @@
                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
 
         </div>
+    </div>
 </nav>
 
 <header class="bg-white shadow">
@@ -125,7 +133,7 @@
 
     </div>
 </main>
-</div>
+
 
 </body>
 </html>

@@ -14,4 +14,10 @@ class AuthenticatedSessionController extends Controller
         dd('hello');
     }
 
+    public function destroy()
+    {
+
+        auth()->logout();
+        return redirect('/');
+    }
 }

@@ -30,4 +30,6 @@ class RegisteredUserController extends Controller
         // redirect somewhere
         return redirect('/')->with('success', 'You have been registered!');
     }
+
+
 }
