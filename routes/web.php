@@ -14,10 +14,12 @@ Route::controller(JobController::class)->group(function () {
     Route::get('/jobs/{job}', 'show');
 
     Route::get('/jobs/{job}/edit', 'edit')
-        ->middleware('auth')
-        ->can('edit', 'job');
+        ->middleware('auth');
+//        ->can('edit', 'job');
 
-    Route::patch('/jobs/{job}', 'update');
+    Route::patch('/jobs/{job}', 'update')
+        ->middleware('auth')
+        ->can('update', 'job');
     Route::delete('/jobs/{job}', 'destroy');
     Route::post('/jobs', 'store');
 });
