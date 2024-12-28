@@ -11,7 +11,8 @@
                     {{$job->employer->name}}
                 </div>
                 <div>
-                    <strong>{{$job->id}} {{$job['title']}}</strong> Pays: ${{$job['salary']}} USD per year.
+                    <strong class="text-deyvid">{{$job->id}} {{$job['title']}}</strong> Pays: ${{$job['salary']}} USD
+                    per year.
                 </div>
             </a>
 
