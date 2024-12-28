@@ -46,7 +46,6 @@ class JobController extends Controller
 
     public function edit(Job $job)
     {
-        dd(session('_token'));
 //
 //        if (Auth::user()->cannot('edit-job, $job')) {
 //            dd("You cannot edit this job");

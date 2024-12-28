@@ -87,7 +87,9 @@
 
                 <div class="mt-6 flex items-center justify-between gap-x-6">
                     <div class="flex items-center">
-                        <button form="delete-form" class="text-red-500 text-sm font-bold">Delete</button>
+                        @can('delete', $job)
+                            <button form="delete-form" class="text-red-500 text-sm font-bold">Delete</button>
+                        @endcan
                     </div>
                     <div class="f lex items-center">
                         <a href="/jobs/{{$job->id}}" class="text-sm/6 font-semibold text-gray-900">Cancel</a>
