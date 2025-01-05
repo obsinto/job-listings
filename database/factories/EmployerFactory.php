@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Employer>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\Employer\Models\Employer>
  */
 class EmployerFactory extends Factory
 {

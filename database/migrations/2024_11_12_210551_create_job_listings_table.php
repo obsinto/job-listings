@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\Employer;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Modules\Employer\Models\Employer;
 
 return new class extends Migration {
     /**

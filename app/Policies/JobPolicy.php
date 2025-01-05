@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\Models\Job;
 use App\Models\User;
+use Modules\Job\Models\Job;
 
 class JobPolicy
 {

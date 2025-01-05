@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Mail\JobPosted;
-use App\Models\Job;
 use Mail;
+use Modules\Job\Models\Job;
 
 class JobController extends Controller
 {

@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Job;
 use Illuminate\Database\Seeder;
+use Modules\Job\Models\Job;
 
 class JobSeeder extends Seeder
 {

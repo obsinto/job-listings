@@ -2,12 +2,12 @@
 
 namespace App\Mail;
 
-use App\Models\Job;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Modules\Job\Models\Job;
 
 class JobPosted extends Mailable
 {

@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace Modules\Employer\Models;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Job\Models\Job;
 
 class Employer extends Model
 {

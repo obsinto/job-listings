@@ -4,8 +4,8 @@ use App\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\RegisteredUserController;
 use App\Jobs\TranslateJob;
-use App\Models\Job;
 use Illuminate\Support\Facades\Route;
+use Modules\Job\Models\Job;
 
 
 Route::view('/', 'home');
