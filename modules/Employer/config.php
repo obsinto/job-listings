@@ -1,4 +1,4 @@
 <?php
 return [
-    'max_employers' => 1,
+    'max_employers' => 12,
 ];
