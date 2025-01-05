@@ -9,11 +9,11 @@ return Application::configure(basePath: dirname(__DIR__))
         web: [
             __DIR__ . '/../routes/web.php',
             __DIR__ . '/../modules/Employer/Routes/web.php',
-            __DIR__ . '/../modules/Jobs/Routes/web.php'
+            __DIR__ . '/../modules/Job/Routes/web.php'
         ],
         api: [
             __DIR__ . '/../routes/api.php',
-            __DIR__ . '/../modules/Jobs/Routes/api.php',
+            __DIR__ . '/../modules/Job/Routes/api.php',
         ],
         commands: __DIR__ . '/../routes/console.php',
         health: '/up',

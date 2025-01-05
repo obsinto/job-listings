@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\JobPosted;
-use Mail;
 use Modules\Job\Models\Job;
 
 class JobController extends Controller
@@ -43,7 +41,7 @@ class JobController extends Controller
             'employer_id' => 1,
         ]);
 
-        Mail::to($job->employer->user)->queue(new JobPosted($job));
+//        Mail::to($job->employer->user)->queue(new JobPosted($job));
         return redirect('/jobs');
     }
 

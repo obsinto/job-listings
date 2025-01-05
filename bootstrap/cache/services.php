@@ -34,6 +34,7 @@
     30 => 'Pest\\Laravel\\PestServiceProvider',
     31 => 'App\\Providers\\AppServiceProvider',
     32 => 'Modules\\Employer\\Providers\\EmployerServiceProvider',
+    33 => 'Modules\\Job\\Providers\\JobServiceProvider',
   ),
   'eager' => 
   array (
@@ -55,6 +56,7 @@
     15 => 'Pest\\Laravel\\PestServiceProvider',
     16 => 'App\\Providers\\AppServiceProvider',
     17 => 'Modules\\Employer\\Providers\\EmployerServiceProvider',
+    18 => 'Modules\\Job\\Providers\\JobServiceProvider',
   ),
   'deferred' => 
   array (
